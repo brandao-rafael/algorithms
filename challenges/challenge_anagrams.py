@@ -36,17 +36,12 @@ def merge(string_list, start, mid, end):
 
 def is_anagram(first_string, second_string):
     """Faça o código aqui."""
-    # if first_string == "" or second_string == "":
-    #     return False
     first_list = list(first_string.lower())
     second_list = list(second_string.lower())
     merge_sort(first_list)
     merge_sort(second_list)
     first_ordened = "".join(first_list)
     second_ordened = "".join(second_list)
-    print("AAAAAAAAAA")
-    print(first_ordened)
-    print(second_ordened)
     if first_ordened == "" or second_ordened == "":
         return (first_ordened, second_ordened, False)
     if first_ordened.lower() == second_ordened.lower():
